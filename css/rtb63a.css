@@ -1,12 +1,22 @@
+/* VARIABLES */
+:root{
+  --negro: #011402;
+  --blanco: #f0fff0;
+  --primario: #306432 ;
+  --secundario: #59745b;
+  --acento: #38b802;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 html, body{
-  background-color: #f0fff0;
-  color: #f0fff0;
+  background-color: var(--blanco);
+  color: var(--blanco);
   overflow-x: hidden;
   overflow-x: hidden;
 }
@@ -25,7 +35,7 @@ p img{
 }
 
 p i, a{
-  color: #f0fff0;
+  color: var(--blanco);
 }
 
 nav, footer{
@@ -48,7 +58,7 @@ nav{
   transform: translateX(-50%);
   z-index: 10;    
   font-size: 1rem;
-  color: #f0fff0; 
+  color: var(--blanco); 
   cursor: pointer;
   animation: bounce 2s infinite ease-in-out;
 }
@@ -85,7 +95,7 @@ canvas{
 }
 
 .overlay__path{
-  fill: #f0fff0;
+  fill: var(--blanco);
 }
 
 /* Contenedor del logo: Centrado y POR ENCIMA del líquido */
@@ -106,7 +116,7 @@ canvas{
 /* La línea del logo */
 .logo__path {
     fill: none;
-    stroke: #011402;
+    stroke: var(--negro);
     stroke-width: 5px; /* Grosor de la línea */
     stroke-linecap: round;
     stroke-linejoin: round;
