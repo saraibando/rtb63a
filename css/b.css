@@ -80,9 +80,10 @@ nav, footer{
   position:relative;
   width: 100%;
   padding: 2em ;
-  z-index: 5;
 }
-
+.year-selector{
+  z-index: 91;
+}
 nav{
   top: 0;
   display: flex;
@@ -249,18 +250,22 @@ canvas{
   color: var(--secundario);
   transition: color 0.3s;
 }
+#current-year.dark-mode {
+  color: var(--blanco);
+  transition: color 0.3s ease;
+}
 
-.menu-overlay.dark-mode .menu-header,
 .menu-overlay.dark-mode .menu-footer .nav-btn{
   color: var(--blanco);
   border-color: var(--blanco);
+  transition: color 0.3s ease;
 }
 
 .nav-btn{
   cursor: pointer;
   font-family: "Tomorrow", sans-serif;
   letter-spacing: 2px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .nav-btn.hidden{
