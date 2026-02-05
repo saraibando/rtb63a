@@ -1,15 +1,15 @@
 const eventData = {
     "2024": [
-        {name: "Kitesurf", img: "../paletacolores.jpeg", desc: "Regata anual en xxx"},
-        {name: "Ritmica", img: "../paletacolores.jpeg", desc: "Competición xxx"},
-        {name: "Navidad", img: "../paletacolores.jpeg", desc: "Gala de navidad"}
+        {name: "Kitesurf", img: "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052396/IMG_0942_doczm9.jpg", desc: "Regata anual en xxx"},
+        {name: "Ritmica", img: "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052386/IMG_0963_ltihom.jpg", desc: "Competición xxx"},
+        {name: "Navidad", img: "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052396/IMG_0940_npf5lk.jpg", desc: "Gala de navidad"}
     ],
     "2023": [
-        {name: "Verano", img: "../paletacolores.jpeg", desc: "Escapada en familia"},
-        {name: "Montaña", img: "../paletacolores.jpeg", desc: "Erm..."}
+        {name: "Verano", img: "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052390/IMG_0951_fe8wie.jpg", desc: "Escapada en familia"},
+        {name: "Montaña", img: "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052389/IMG_0956_bdypja.jpg", desc: "Erm..."}
     ],
     "2021": [
-        {name: "Pandemia", img: "../paletacolores.jpeg", desc: "yess"}
+        {name: "Pandemia", img: "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052396/IMG_0942_doczm9.jpg", desc: "yess"}
     ]
 }
 
