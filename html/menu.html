@@ -21,11 +21,32 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><p > rtb </p><img src="../logos/nofondo.png" alt=""></div>
-        <p>20XX</p>
+        <div class="logo"><p > rtb </p>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <g transform="matrix(0.774236,0,0,0.774236,13.2882,11.28869)">
+                    <path class="llogo__path" d="M25.181,48.225L36.928,41.452M74.819,60.394L74.819,64.48M74.819,60.394L74.819,48.225L62.076,48.225L62.076,60.394L74.819,60.394ZM35.506,23.364L25.181,41.157L25.181,60.907L34.434,76.636L52.441,76.636L62.076,60.369L62.076,48.225L51.178,41.452L61.579,23.964L49.879,23.964" />
+                </g>
+            </svg>
+        </div>
+        <div class="year-selector">
+            <p id="current-year" style="cursor: pointer;" >20XX</p>
+        </div>
     </nav>
-    <main>
+    <div id="year-menu" class="menu-overlay">
+        
+        <div id="menu-background" class="menu-bg"></div>
 
+        <div class="menu-header">
+            <span id="close-menu" class="nav-btn">[X]</span>
+        </div>
+
+        <div id="menu-content" class="menu-content"></div>
+
+        <div class="menu-footer">
+            <span id="back-btn" class="nav-btn hidden">←</span>    </div>
+        </div>
+    <main>
+        <img src="/paletacolores.jpeg" alt="">
     </main>
     <footer>
         <p><a href="https://www.instagram.com/ausabe_photos/"> @ausabe_photos</a> </p>
@@ -46,6 +67,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script type="module" src="../js/transicion.js"></script>
+    <script type="module" src="../js/menu.js"></script>
 
 </body>
 </html>
