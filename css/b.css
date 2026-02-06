@@ -43,6 +43,9 @@ h1{
   letter-spacing: 0.05em;
   -webkit-font-smoothing: antiliased;
 }
+.logo a{
+  text-decoration: none;
+}
 p{
   text-transform:  uppercase;
   font-family: "Tomorrow", sans-serif;
@@ -159,7 +162,7 @@ canvas{
 }
 
 .overlay__path{
-  fill: var(--blanco);
+  fill: var(--primario);
 }
 
 .logo-overlay {

@@ -2,10 +2,11 @@
 :root{
   --negro: #011402;
   --blanco: #f0fff0;
-  --primario: #306432 ;
-  --secundario: #59745b;
-  --acento: #38b802;
+  --primario: #59745b ;
+  --secundario: #3a4f3b;
+  --acento: #7aec4a;
 }
+
 
 *{
   margin: 0;
@@ -96,6 +97,10 @@ canvas{
 
 .overlay__path{
   fill: var(--blanco);
+}
+
+.overlay__path1{
+  fill: var(--primario);
 }
 
 /* Contenedor del logo: Centrado y POR ENCIMA del líquido */
