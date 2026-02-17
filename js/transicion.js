@@ -27,14 +27,26 @@ const paths = {
 let isAnimating = false;
 
 const pageEntrance = () => {
+    gsap.to("#canvas", { 
+        opacity: 1, 
+        duration: 1, 
+        ease: "power2.inOut" 
+    });
+    
     const tl = gsap.timeline ({
         onComplete: () => isAnimating = false
     });
 
+    // 1. Aseguramos condiciones iniciales
     if(logoPath){ 
         gsap.set(logoPath, { strokeDashoffset: logoLength, opacity: 1});
     }
 
+    // --- NUEVO: Animar el canvas independientemente ---
+    // Esto asegura que se ejecute sí o sí, sin romper la cadena 'tl'
+    // --------------------------------------------------
+
+    // 2. Tu animación original de la cortina y el logo
     tl.set(overlayPath, {
         attr: { d: paths.step2.filled}
     })
@@ -43,13 +55,11 @@ const pageEntrance = () => {
         duration: 2.0,
         ease: "power2.inOut"
     })
-
     .to(logoPath, {
         duration: 0.5,
         opacity: 0,
         ease: "power2.out"
     })
-
     .to(overlayPath, {
         duration: 0.5,
         ease: 'sine.in',
