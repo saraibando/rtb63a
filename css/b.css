@@ -84,9 +84,16 @@ nav, footer{
   width: 100%;
   padding: 2em ;
 }
+
 .year-selector{
   z-index: 91;
 }
+
+.year-selector p:hover{
+  font-style: italic;
+  text-decoration: dotted underline;
+}
+
 nav{
   top: 0;
   display: flex;
@@ -136,6 +143,10 @@ footer a{
   color: var(--secundario);
   font-size: 9px;
   letter-spacing: 1.8px;
+}
+
+footer a:hover{
+  text-decoration: wavy underline;
 }
 
 footer p{
@@ -359,4 +370,43 @@ canvas{
 #back-btn {
   opacity: 0;
   animation: slideUpFade 0.8s 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Estilo para la cuadrícula dentro de .cuerpo */
+/* --- ESTILOS DE LA GALERÍA --- */
+
+.galeria-grid {
+    display: grid;
+    /* Esto crea exactamente 3 columnas del mismo tamaño */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Espacio entre las fotos (hueco) */
+    gap: 20px; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+.galeria-grid img {
+    /* !important es necesario para vencer a tu regla de 18px */
+    width: 100% !important; 
+    height: 300px; /* Altura fija para que todas se vean iguales */
+    object-fit: cover;  /* Recorta la imagen para llenar el cuadro sin deformarse  */
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave opcional */
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por encima (opcional) */
+.galeria-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* --- RESPONSIVE (Para que en móvil se vea 1 columna en vez de 3 pequeñitas) --- */
+@media (max-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: 1fr; /* 1 sola columna en pantallas pequeñas */
+        gap: 10px;
+    }
+    .galeria-grid img {
+        height: 250px; /* Un poco más bajitas en móvil */
+    }
 }

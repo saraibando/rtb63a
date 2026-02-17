@@ -82,6 +82,13 @@ canvas{
   top: 0;
   left: 0;
   z-index: -5;
+  opacity: 0;
+  animation: aparecerCanvas 1.5s 0.5s ease-out forwards;
+}
+@keyframes aparecerCanvas {
+  to {
+    opacity: 1;
+  }
 }
 
 .overlay {
