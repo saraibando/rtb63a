@@ -20,11 +20,11 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.z = 5;
 
 const myImages = [
-  "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052396/IMG_0942_doczm9.jpg",
-  "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052386/IMG_0963_ltihom.jpg",
-  "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052396/IMG_0940_npf5lk.jpg",
-  "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052390/IMG_0951_fe8wie.jpg",
-  "https://res.cloudinary.com/dqinmqte8/image/upload/v1770052389/IMG_0956_bdypja.jpg"
+  "https://res.cloudinary.com/yutalleres/image/upload/IMG_0942_doczm9.jpg",
+  "https://res.cloudinary.com/yutalleres/image/upload/IMG_0963_ltihom.jpg",
+  "https://res.cloudinary.com/yutalleres/image/upload/IMG_0940_npf5lk.jpg",
+  "https://res.cloudinary.com/yutalleres/image/upload/IMG_0951_fe8wie.jpg",
+  "https://res.cloudinary.com/yutalleres/image/upload/IMG_0956_bdypja.jpg"
 ];
 
 const raycaster = new THREE.Raycaster();
@@ -447,4 +447,5 @@ window.addEventListener('start-threejs',() => {
     animate();
   }
 });
+
 
