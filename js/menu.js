@@ -1,4 +1,4 @@
-const cloudName = "dqinmqte8"; // Tu usuario de Cloudinary
+const cloudName = "yutalleres"; // Tu usuario de Cloudinary
 
 const imageCache = {};
 // 1. Declaramos la variable vacía al principio
@@ -218,4 +218,5 @@ function descargarListaFotos(tag) {
             }
         })
         .catch(error => console.error(`Error al descargar la lista de fotos para tag "${tag}":`, error));
+
 }
